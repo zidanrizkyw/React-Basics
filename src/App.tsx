@@ -1,6 +1,8 @@
 import Welcome from "./assets/components/Welcome"
 import Header from "./assets/components/Header"
 import ProfileCard from "./assets/components/ProfileCard"
+import Counter from "./assets/components/Counter"
+import Likes from "./assets/components/Likes"
 
 type Teacher = {
   name: string;
@@ -38,7 +40,9 @@ const teachers: Teacher[] = [
 
 function App() {
   return (
-    <div>
+    <div style={{
+      padding: "16px 32px"
+    }}>
       <Header />
       <Welcome />
       <div style={{ gap: "10px", display: "flex", flexDirection: "row" }}>
@@ -53,6 +57,8 @@ function App() {
           })
         }
       </div>
+      <Counter/>
+      <Likes/>
 
     </div>
 
