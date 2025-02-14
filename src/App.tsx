@@ -9,6 +9,8 @@ import HomePage from "./pages/HomePage"
 import NotFoundPage from "./pages/NotFoundPage"
 import ProductDetailPage from "./pages/ProductDetailPage"
 import ProductListPage from "./pages/ProductListPage"
+import FormPage from "./pages/FormPage"
+import RHFPage from "./pages/RHFPage"
 
 type Teacher = {
   name: string;
@@ -51,8 +53,10 @@ function App() {
       <Route path="/" element={<HomePage/>}/>
       <Route path="/terms" element={<TermsPage/>}/>
       <Route path="/product-list" element={<ProductListPage/>}/>
+      <Route path="/form" element={<FormPage/>}/>
+      <Route path="/rhf" element={<RHFPage/>}/>
 
-      <Route path="/product/:productSlug" element={<ProductDetailPage/>}/>
+      <Route path="/product/:productSlug" element={<ProductDetailPage/>}/>d
 
       <Route path="*" element={<NotFoundPage/>}/>
     </Routes>
